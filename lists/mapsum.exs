@@ -4,8 +4,8 @@ defmodule MyList do
     end
 
     def mapsum(list, func) do
-      mapped_list = map(list, func)
-      sum(mapped_list)
+      map(list, func) 
+        |> sum
     end
 
     def map([], _func), do: []
